@@ -1,15 +1,15 @@
-import React from "react";
-import { render } from "react-dom";
-import { App } from "./components/App";
-import CssBaseline from "@material-ui/core/CssBaseline";
-import { BrowserRouter } from "react-router-dom";
+import React from 'react';
+import { render } from 'react-dom';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import { BrowserRouter } from 'react-router-dom';
+import Home from './pages/Home';
 
 render(
   <>
     <BrowserRouter>
-      <App />
+      <Home />
       <CssBaseline />
     </BrowserRouter>
   </>,
-  document.querySelector("#root")
+  document.querySelector('#root'),
 );
