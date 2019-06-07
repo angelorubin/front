@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Redirect } from "react-router-dom";
 import { fakeAuth } from "../utils";
 
-export const PrivateRoute = ({ component: Dashboard, ...rest }) => (
+const PrivateRoute = ({ component: Dashboard, ...rest }) => (
   <Route
     {...rest}
     render={props =>
@@ -14,3 +14,5 @@ export const PrivateRoute = ({ component: Dashboard, ...rest }) => (
     }
   />
 );
+
+export default PrivateRoute;
